@@ -1,0 +1,64 @@
+<ion-header class="header">
+    <ion-img src="../../../assets/images/img_login.jpg" alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+</ion-header>
+
+<ion-row>
+  <ion-col *ngIf="this.loading" class="ion-text-center" size="12">
+    <ion-spinner color="primary" size="4" name="lines"></ion-spinner>
+  </ion-col>
+</ion-row>
+
+<ion-content *ngIf="!this.loading" class="ion-padding">
+<ion-grid >
+  <ion-row>
+    <ion-col size="12" class="ion-text-center">
+      <h2 style="font-size: 25px; font-weight: bold;">Iniciar sesión</h2>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col class="form">
+      <form [formGroup]="loginForm">
+        <!--Se verifica si los campos passwor y username son correctos para dar un error-->
+        <!--<ion-text *ngIf="campoInvalido('username')">Usuario inválido</ion-text>-->
+        <input class="input" formControlName="username" type="text"  placeholder="Usuario">
+         <!--Se verifica si los campos passwor y username son correctos para dar un error-->
+        <!--<ion-text *ngIf="campoInvalido('password')">Contraseña incorrecta</ion-text>-->
+        <input class="input" formControlName="password" type="password" placeholder="Contraseña">
+      </form>
+
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="ion-margin-vertical">
+      <div class="ion-text-right">
+        <a [routerLink]="['/recover-password']">Olvidé mi contraseña </a>
+      </div>
+    </ion-col>
+  </ion-row>
+
+ 
+  
+  <ion-row>
+    <ion-col>
+      <ion-button class="button-primary" (click)="login()" expand="block">Iniciar Sesion</ion-button>
+     
+    </ion-col>
+  </ion-row>
+<!--
+  <div class="ion-text-center">
+    <a  [routerLink]="['/register']">Crear una cuenta </a>
+  </div>
+-->
+
+</ion-grid>
+</ion-content>
+
+<ion-footer class="ion-margin-bottom ion-no-border">
+
+</ion-footer>
+
+
+
+
