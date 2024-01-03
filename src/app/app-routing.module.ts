@@ -27,6 +27,19 @@ const routes: Routes = [
     path: 'change-password',
     loadChildren: () => import('./pages/change-password/change-password.module').then( m => m.ChangePasswordPageModule)
   },
+  {
+    path: 'corte-caja',
+    loadChildren: () => import('./pages/corte-caja/corte-caja.module').then( m => m.CorteCajaPageModule)
+  },
+  {
+    path: 'notas',
+    loadChildren: () => import('./pages/notes-list/notas.module').then( m => m.NotasPageModule)
+  },
+  {
+    path: 'create-note',
+    loadChildren: () => import('./pages/create-note/create-note.module').then( m => m.CreateNotePageModule)
+  },
+ 
 ];
 
 @NgModule({
