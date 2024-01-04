@@ -36,7 +36,7 @@ export class LoginPage implements OnInit {
      // next: (resp:any) => {
        //  console.log('Respuesta del login ', resp.token);
        //  this.pruductsService.respLogin = resp;
-        this.router.navigate(['/home']);
+        this.router.navigate(['/create-note']);
        //  this.loading = false;
        //  this.loginForm.reset();
       //},

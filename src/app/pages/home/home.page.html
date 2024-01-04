@@ -11,7 +11,7 @@
 <ion-content [fullscreen]="true">
 
   <div class="container">
-    <div>
+    <div class="primer-contenedor">
       <div class="title">
         <h2>Notas del dia</h2>
       </div>
@@ -26,6 +26,8 @@
         </div>
       </div>
 
+      <hr>
+    
       <ion-list>
         <ion-item-sliding class="item-sliding" >
           <ion-item-options side="start">
@@ -36,15 +38,8 @@
       
           <ion-item>
             <div class="contenedor-precio-cantidad">
-              <h5 class="cantidad">Pedido 1</h5>
-              <h5 class="total">8000</h5>
-            </div>
-          </ion-item>
-  
-          <ion-item>
-            <div class="contenedor-precio-cantidad">
-              <h5 class="cantidad">Pedido 1</h5>
-              <h5 class="total">8000</h5>
+              <h5 class="producto">Pedido 1</h5>
+              <h5 class="total"> $ 8.000 </h5>
             </div>
           </ion-item>
     
@@ -57,12 +52,26 @@
         
       </ion-list>
     </div>
-
+    <div class="segundo-contenedor">
+      <div class="contenedor-ventas-dia">
+        <div class="total-en-ventas">
+          <h3 class="efectivo">Total Transferencias</h3>
+          <h3 class="total">$143.000</h3>
+        </div>
+  
+        <div class="total-en-ventas">
+          <h3 class="efectivo">Total Efectivo</h3>
+          <h3 class="total">$78.000</h3>
+        </div>
+      </div>
+      
+      <div class="container-btn-create">
+        <button class="btn-create-note">Crear nota</button>
+      </div>
+    </div>
    
     
-    <div class="container-btn-create">
-      <button class="btn-create-note">Crear nota</button>
-    </div>
+    
   </div>
   
 </ion-content>
