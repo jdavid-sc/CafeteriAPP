@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
+  public appPages = [
+    { title: 'Notas', url: '/home', icon: 'home' },
+    { title: 'Crear Nota', url: '/create-note', icon: 'book' },
+    { title: 'Corte De Caja', url: '/corte-caja', icon: 'cash' },
+    { title: 'Cambiar contraseña', url: '/change-password', icon: 'key' },
+    { title: 'Cambiar contraseña', url: '/change-password', icon: 'key' } 
+  ];
+  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+
   constructor() { }
 
   ngOnInit() {

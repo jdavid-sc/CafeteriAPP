@@ -1,0 +1,92 @@
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: brown;
+}
+.contenedor-precio-cantidad {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.segundo-contenedor {
+    margin-right: 10px;
+}
+
+.container{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.container-headers {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.producto {
+    font-size: 23px;  
+}
+.total {
+    font-size: 25px;
+    font-weight: bold;
+    color: brown;
+}
+.vendido-total {
+    display: flex;
+    gap: 40px;
+    margin-right: 10px;
+}
+
+.btn-create-note{
+    font-size: 30px;
+    font-weight: bolder;
+    width: 80%;
+    padding: 14px;
+    background: #ffc409;
+    color: currentColor;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.total-en-ventas {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.efectivo {
+    font-weight: bold;
+}
+.container-btn-create{
+    display: flex;
+    justify-content: center;
+   
+    margin-top: 20px;
+}
+.vendido-total {
+    margin-bottom: 0px;
+    display: flex;
+    gap: 40px;
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.header-product {
+    margin-left: 5px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 25px;
+}
