@@ -7,7 +7,7 @@
 .title h2 {
     font-size: 32px;
     font-weight: bold;
-    color: brown;
+    color: green;
 }
 .contenedor-precio-cantidad {
     width: 100%;
@@ -17,7 +17,14 @@
     align-items: center;
     height: 50px;
 }
-
+.container-inputs {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+.cont-producto {
+    width: 140%;
+}
 .container{
     height: 90%;
     display: flex;
@@ -37,7 +44,7 @@
 .total {
     font-size: 25px;
     font-weight: bold;
-    color: brown;
+    color: red;
     
 }
 .vendido-total {
@@ -47,14 +54,15 @@
 }
 
 .btn-create-note{
-    font-size: 30px;
     font-weight: bolder;
     width: 80%;
     padding: 14px;
-    background: #ffc409;
     color: currentColor;
     border-radius: 10px;
     position: absolute;
+    background: green;
+    color: white;
+    font-size: 20px;
 }
 
 .total-en-ventas {

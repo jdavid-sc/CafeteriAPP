@@ -7,7 +7,7 @@
 .title h2 {
     font-size: 32px;
     font-weight: bold;
-    color: brown;
+    color: red;
 }
 .contenedor-precio-cantidad {
     width: 100%;
@@ -18,7 +18,10 @@
     height: 50px;
 }
 .segundo-contenedor {
-    margin-right: 10px;
+    background: lightgoldenrodyellow;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
 }
 .container{
     height: 90%;
@@ -39,7 +42,7 @@
 .total {
     font-size: 25px;
     font-weight: bold;
-    color: brown;
+    color: red;
 }
 .vendido-total {
     display: flex;
@@ -48,14 +51,26 @@
 }
 
 .btn-create-note{
-    font-size: 30px;
+    font-weight: bolder;
+    width: 90%;
+    padding: 14px;
+    border-radius: 10px;
+    position: absolute;
+    background: green;
+    color: white;
+    font-size: 20px;
+}
+
+.btn-tomar-pedido {
     font-weight: bolder;
     width: 80%;
     padding: 14px;
-    background: #ffc409;
     color: currentColor;
     border-radius: 10px;
     position: absolute;
+    background: rgb(10, 127, 186);
+    color: white;
+    font-size: 20px;
 }
 
 .total-en-ventas {

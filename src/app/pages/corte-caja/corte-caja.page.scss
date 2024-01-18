@@ -7,7 +7,7 @@
 .title h2 {
     font-size: 32px;
     font-weight: bold;
-    color: brown;
+    color: red;
 }
 .contenedor-precio-cantidad {
     width: 100%;
@@ -40,7 +40,7 @@
 .total {
     font-size: 25px;
     font-weight: bold;
-    color: brown;
+    color: red;
 }
 .vendido-total {
     display: flex;
@@ -49,16 +49,15 @@
 }
 
 .btn-create-note{
-    font-size: 30px;
     font-weight: bolder;
     width: 80%;
     padding: 14px;
-    background: #ffc409;
-    color: currentColor;
     border-radius: 10px;
     position: absolute;
+    background: green;
+    color: white;
+    font-size: 20px;
 }
-
 .total-en-ventas {
     width: 100%;
     display: flex;

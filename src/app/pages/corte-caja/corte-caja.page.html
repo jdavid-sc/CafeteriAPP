@@ -7,70 +7,67 @@
     </ion-buttons>
   </ion-toolbar>
 </div>
-<p>Corte de caja</p>
-<ion-content [fullscreen]="true">
-
-  <div class="container">
-    <div class="primer-contenedor">
-      <div class="title">
-        <h2>Corte de Caja</h2>
-      </div>
-      <div class="container-headers">
-        
-        <div>
-          <p class="header-product">Pedido</p>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button color="primary"></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true">
+  
+    <div class="container">
+      <div class="primer-contenedor">
+        <div class="title">
+          <h2>Cortes de caja</h2>
         </div>
-        
-        <div>
-          <p class="vendido-total">Precio</p>
-        </div>
-      </div>
-      <hr>
-    
-      <ion-list>
-        <ion-item-sliding class="item-sliding" >
-          <ion-item-options side="start">
-            <ion-item-option color="success">
-              <ion-icon slot="icon-only" name="alert-circle-outline"></ion-icon>
-            </ion-item-option>
-          </ion-item-options>
-      
-          <ion-item>
-            <div class="contenedor-precio-cantidad">
-              <h5 class="producto">Pedido 1</h5>
-              <h5 class="total"> $ 8.000 </h5>
-            </div>
-          </ion-item>
-    
-          <ion-item-options side="end" >
-            <ion-item-option color="danger">
-              <ion-icon slot="icon-only" name="trash"></ion-icon>
-            </ion-item-option>
-          </ion-item-options>
-        </ion-item-sliding>
-        
-      </ion-list>
-    </div>
-    <div class="segundo-contenedor">
-      <div class="contenedor-ventas-dia">
-        <div class="total-en-ventas">
-          <h3 class="efectivo">Total Transferencias</h3>
-          <h3 class="total">$143.000</h3>
+        <div class="container-headers">
+          
+          <div>
+            <p class="header-product">Fecha corte</p>
+          </div>
+          
+          <div>
+            <p class="vendido-total">Total vendido</p>
+          </div>
         </div>
   
-        <div class="total-en-ventas">
-          <h3 class="efectivo">Total Efectivo</h3>
-          <h3 class="total">$78.000</h3>
-        </div>
-      </div>
+        <hr>
       
-      <div class="container-btn-create">
-        <button class="btn-create-note">Cortar caja</button>
+        <ion-list>
+          <ion-item-sliding class="item-sliding" >
+            <ion-item-options side="start">
+              <ion-item-option color="success">
+                <ion-icon slot="icon-only" name="alert-circle-outline"></ion-icon>
+              </ion-item-option>
+            </ion-item-options>
+        
+            <ion-item>
+              <div class="contenedor-precio-cantidad">
+                <h5 class="producto">Pedido 1</h5>
+                <h5 class="total"> $ 8.000 </h5>
+              </div>
+            </ion-item>
+      
+            <ion-item-options side="end" >
+              <ion-item-option color="danger">
+                <ion-icon slot="icon-only" name="trash"></ion-icon>
+              </ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+          
+        </ion-list>
       </div>
+      <div class="segundo-contenedor">
+        
+        
+      
+      </div>
+     
+      
+      
     </div>
-   
     
-    
-  </div>
-  
-</ion-content>
+  </ion-content>

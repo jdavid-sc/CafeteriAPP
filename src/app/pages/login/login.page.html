@@ -22,10 +22,12 @@
       <form [formGroup]="loginForm">
         <!--Se verifica si los campos passwor y username son correctos para dar un error-->
         <!--<ion-text *ngIf="campoInvalido('username')">Usuario inválido</ion-text>-->
-        <input class="input" formControlName="username" type="text"  placeholder="Usuario">
+        <!--<input class="input" formControlName="username" type="text"  placeholder="Usuario">-->
+        <ion-input formControlName="username" label="Ingrese su usuario" label-placement="floating" fill="outline" placeholder="Usuario"></ion-input>
          <!--Se verifica si los campos passwor y username son correctos para dar un error-->
         <!--<ion-text *ngIf="campoInvalido('password')">Contraseña incorrecta</ion-text>-->
-        <input class="input" formControlName="password" type="password" placeholder="Contraseña">
+        <!--<input class="input" formControlName="password" type="password" placeholder="Contraseña">-->
+        <ion-input formControlName="password" type="password" label="Ingrese su contraseña" label-placement="floating" fill="outline" placeholder="Contraseña"></ion-input>
       </form>
 
     </ion-col>
@@ -42,7 +44,7 @@
   
   <ion-row>
     <ion-col>
-      <ion-button class="button-primary" (click)="login()" expand="block">Iniciar Sesion</ion-button>
+      <button class="btn-create-note" (click)="login()">Iniciar Sesion</button>
     </ion-col>
   </ion-row>
 <!--
