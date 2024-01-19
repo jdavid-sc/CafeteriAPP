@@ -4,6 +4,24 @@
     justify-content: center;
 }
 
+.title-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+}
+
+ion-title {
+    color: orange;
+}
+ion-label{
+    color: orange;
+    font-weight: 400;
+}
+
+ion-icon{
+    color: green;
+}
 .title h2 {
     font-size: 32px;
     font-weight: bold;
@@ -19,7 +37,6 @@
 }
 .segundo-contenedor {
     background: lightgoldenrodyellow;
-    margin-bottom: 20px;
     width: 100%;
     padding: 10px;
 }
@@ -33,8 +50,13 @@
 .container-headers {
     display: flex;
     justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 15px;
+   
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+
 }
 .producto {
     font-size: 23px;  
@@ -48,17 +70,6 @@
     display: flex;
     gap: 40px;
     margin-right: 10px;
-}
-
-.btn-create-note{
-    font-weight: bolder;
-    width: 90%;
-    padding: 14px;
-    border-radius: 10px;
-    position: absolute;
-    background: green;
-    color: white;
-    font-size: 20px;
 }
 
 .btn-tomar-pedido {
@@ -99,6 +110,7 @@
     font-size: 25px;
 }
 .header-product {
+
     margin-left: 5px;
     margin-bottom: 0px;
     font-weight: bold;
